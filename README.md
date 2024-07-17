@@ -36,7 +36,8 @@
 
 Here is a screenshot and a demo animation of the BP Simulator application:
 
-![image](https://github.com/user-attachments/assets/35a1d3a1-542e-4a98-a6e7-15e891a5dfdd)
+![image](https://github.com/user-attachments/assets/35a1d3a1-542e-4a98-a6e7-15e891a5dfdd) ![mainscreen](https://github.com/user-attachments/assets/9b5c9dc8-339e-4172-aab5-9935c8de4acc)
+
 
 
 
