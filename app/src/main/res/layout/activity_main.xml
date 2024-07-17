@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutLinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/backgound_image"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="BP MONITOR APP"
+        android:textAlignment="center"
+        android:textColor="@color/fadewhite"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/woman_image"
+        android:stateListAnimator="@anim/heartbeat" /> <!-- Ensure the drawable is correct -->
+
+    <Button
+        android:id="@+id/getstart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_pressed"
+        android:gravity="center"
+        android:text="GET START"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:stateListAnimator="@anim/fade_in">
+
+        <ImageView
+            android:id="@+id/ic_instagram"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="Instagram"
+            android:src="@drawable/ic_instagram"
+            android:stateListAnimator="@null" />
+
+        <ImageView
+            android:id="@+id/ic_linkedin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="LinkedIn"
+            android:src="@drawable/ic_linkedin"
+            android:stateListAnimator="@null" />
+
+        <ImageView
+            android:id="@+id/ic_facebook"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Facebook"
+            android:src="@drawable/ic_facebook"
+            android:stateListAnimator="@null" />
+    </LinearLayout>
+</LinearLayout>

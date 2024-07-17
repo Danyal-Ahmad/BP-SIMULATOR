@@ -1,0 +1,40 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Button animation style -->
+    <style name="AnimatedButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_animation</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+        <style name="CustomDialog" parent="Theme.AppCompat.Dialog">
+            <item name="android:backgroundDimEnabled">true</item>
+            <item name="android:backgroundDimAmount">0.5</item>
+            <item name="android:windowBackground">@android:color/transparent</item>
+        </style>
+
+    <style name="TransparentDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!-- Social media links -->
+    <string name="instagram_link">https://www.instagram.com/denial_khxn/</string>
+    <string name="twitter_link">https://twitter.com/denial_khxn/</string>
+    <string name="linkedin_link">https://www.linkedin.com/in/denial_khxn/</string>
+    <string name="facebook_link">https://www.facebook.com/denial_khxn/</string>
+</resources>

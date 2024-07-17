@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/foreground_image"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:paddingBottom="20dp"
+        android:text="Please touch and hold the fingerprint icon"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/fingerprintIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_fingerprint"
+        android:onClick="onFingerprintIconClick"
+        android:padding="20dp"
+        android:background="@drawable/rounded_background"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/countdownText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text=""
+        android:textColor="@color/fade_black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/warningText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text=""
+        android:textColor="@color/warningTextColor"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:animateLayoutChanges="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:textAlignment="gravity">
+
+        <TextView
+            android:id="@+id/bpLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="20dp"
+            android:textColor="@color/fade_black"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/ic_bp"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Blood Pressure Icon"
+            android:src="@drawable/ic_info"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/instructionsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_pressed"
+        android:drawableStart="@drawable/ic_info"
+        android:drawablePadding="8dp"
+        android:onClick="showInstructions"
+        android:padding="10dp"
+        android:stateListAnimator="@anim/fade_in"
+        android:text="Instructions"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>
